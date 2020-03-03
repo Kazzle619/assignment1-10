@@ -23,9 +23,38 @@ main {
 	top: 0;
 	left: 0;
 }
-img {
-	width: 280px;
+.content-image1 {
+	height: 150px;
+	background-image: url(img/flow01.png);
+  background-size: cover;
+  background-position: bottom;
+}
+.content-image2 {
+	height: 150px;
+	background-image: url(img/flow02.png);
+  background-size: cover;
+  background-position: bottom;
+}
+.content-image3 {
+	height: 150px;
+	background-image: url(img/flow03.png);
+  background-size: cover;
+  background-position: bottom;
 }
 .content-box:last-child {
 	margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+	main {
+		width: 90%;
+		padding: 50px 5%;
+	}
+	.content-box {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.content-box:last-child {
+		margin-bottom: 0;
+	}
 }
